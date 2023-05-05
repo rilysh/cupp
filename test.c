@@ -1,17 +1,3 @@
-### cupp
-A basic Telegram API wrapper in C
-
-### Implemented
-- send_message
-- forward_message
-- copy_message
-- getme
-- logout
-- close \
-and get_my_name
-
-### Example
-```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -37,4 +23,3 @@ int main()
 	free(cui.url);
 	free(res);
 }
-```

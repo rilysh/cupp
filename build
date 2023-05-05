@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+FLAGS="-Wall -Wextra -O3 -s"
+LINK=-lcurl
+TEST=test
+CUPP=cupp
+
+[ ! -z $(cc &>/dev/null) ] && {
+	echo Error: No C compiler was found.
+}
+
+cc ${FLAGS} ${TEST}.c ${CUPP}.c ${LINK} -o ${TEST}
